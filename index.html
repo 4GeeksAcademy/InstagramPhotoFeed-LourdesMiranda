@@ -12,168 +12,204 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
+
 <body>
     <div class="container">
-    <!--Menú-nav-->
-    <nav class="navbar navbar-light bg-light">
+        <!--Menú-nav-->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <div class="d-flex gap-2 me-5">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modalpopup">Create a new
+                        post</button>
+                    <!--dropdown-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><a class="dropdown-item border-top text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                    <!--fin de dropdown-->
+                </div>
+            </div>
+        </nav>
+        <!--modal-->
+        <div class="modal" id="Modalpopup" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Create a new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Caption:</p>
+                        <div class="border ps-1 pb-4 text-secondary">Add the caption of your post here</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fin de modal-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--fin Menú-nav-->
+        <!--boton de seleccion nav-->
         <div class="container-fluid">
-            <a class="navbar-brand"><i class="fa-brands fa-instagram"></i>Instagram</a>
-            <div class="d-flex gap-2 me-5">
-                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modalpopup">Create a new
-                    post</button>
-                <!--dropdown-->
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fa-solid fa-gear"></i>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active btn" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                </li>
+            </ul>
+            <!--fin boton de seleccion nav-->
+            <!--contenido de botones-->
+            <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
+                <!--3 columnas de imagenes-->
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="container-fluid">
+                        <div class="row mt-2 g-1 d-flex justify-content-center">
+                            <div class="col-4">
+                                <img src="car_8046619_1280.jpg" class="rounded img-pequena" alt="Mundo de colores">
+                                <p><i class="fa-regular fa-eye"></i><b><small> 15789</small></b></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="ford_3984344_1280.jpg" class="rounded img-pequena" alt="Mundo de colores">
+                                <p><i class="fa-regular fa-eye"></i><b><small> 11048</small></b></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="shelby_3821709_1280.jpg" class="rounded img-pequena" alt="Mundo de colores">
+                                <p><i class="fa-regular fa-eye"></i><b><small> 43874</small></b></p>
+                            </div>
+                        </div>
+                        <div class="row mt-2 g-1 d-flex justify-content-center">
+                            <div class="col-4">
+                                <img src="car_5535486_1280.jpg" class="rounded img-pequena" alt="Mundo de colores">
+                                <p><i class="fa-regular fa-eye"></i><b><small> 85903</small></b></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="car_1772797_1280.jpg" class="rounded img-pequena" alt="Mundo de colores">
+                                <p><i class="fa-regular fa-eye"></i><b><small> 20485</small></b></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="nissangtr_2975651_1280.jpg" class="rounded img-pequena"
+                                    alt="Mundo de colores">
+                                <p><i class="fa-regular fa-eye"></i><b><small> 18495</small></b></p>
+                            </div>
+                        </div>
+                        <div class="row mt-2 g-1 mb-2 d-flex justify-content-center">
+                            <div class="col-4">
+                                <img src="car_6879134_1280.jpg" class="rounded img-pequena" alt="Mundo de colores">
+                                <p><i class="fa-regular fa-eye"></i><b><small> 25985</small></b></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="chevrolet_6878182_1280.jpg" class="rounded img-pequena"
+                                    alt="Mundo de colores">
+                                <p><i class="fa-regular fa-eye"></i><b><small> 13853</small></b></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="dare_6604189_1280.jpg" class="rounded img-pequena" alt="Mundo de colores">
+                                <p><i class="fa-regular fa-eye"></i><b><small> 34964</small></b></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!--fin de dropdown-->
-            </div>
-        </div>
-    </nav>
-    <!--modal-->
-    <div class="modal" id="Modalpopup" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Create a new post</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Caption:</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Publish</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--fin de modal-->
+                <!-- fin3 columnas de imagenes-->
+                <!--fila imagen con descripción-->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="card m-2" style="width: 35rem;">
+                        <div class="d-flex justify-content-between mt-1 ms-2 me-2">
+                            <h5>Muscle Car</h5>
+                            <p>1/3</p>
+                        </div>
+                        <img src="chevrolet_6878182_1280.jpg" class="card-img-top" alt="bosque de setas">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h6>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-comment"></i>
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </h6>
+                                <h6>
+                                    <i class="fa-solid fa-tag"></i>
+                                </h6>
+                            </div>
+                            <p class="card-text"><b>8573 likes</b></p>
+                            <p class="card-text"><small>El clásico Chevrolet, con un poder y estilo que nunca pasan de
+                                    moda. Impala 1967, Bel Air, historia sobre ruedas que te hace sentir la leyenda en
+                                    cada carretera 🔥</small></p>
+                        </div>
+                    </div>
+                    <div class="card m-2" style="width: 35rem;">
+                        <div class="d-flex justify-content-between mt-1 ms-2 me-2">
+                            <h5>Muscle Car</h5>
+                            <p>2/3</p>
+                        </div>
+                        <img src="ford_3984344_1280.jpg" class="card-img-top" alt="bosque de setas">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h6>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-comment"></i>
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </h6>
+                                <h6>
+                                    <i class="fa-solid fa-tag"></i>
+                                </h6>
+                            </div>
+                            <p class="card-text"><b>9347 likes</b></p>
+                            <p class="card-text"><small>Mustang Shelby, pura potencia y adrenalina en cada curva. Con su
+                                    rugido inconfundible y un diseño que impresiona, es el sueño de todo amante de los
+                                    muscle cars 🔥</small></p>
+                        </div>
+                    </div>
+                    <div class="card m-2" style="width: 35rem;">
+                        <div class="d-flex justify-content-between mt-1 ms-2 me-2">
+                            <h5>JDM</h5>
+                            <p>3/3</p>
+                        </div>
+                        <img src=" car_6879134_1280.jpg" class="card-img-top" alt="bosque de setas">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h6>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-comment"></i>
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </h6>
+                                <h6>
+                                    <i class="fa-solid fa-tag"></i>
+                                </h6>
+                            </div>
+                            <p class="card-text"><b>14848 likes</b></p>
+                            <p class="card-text"><small>Toyota Supra MK4 un ícono del JDM y rey de las calles. Potencia
+                                    brutal, líneas perfectas y ese turbo legendario que todo fan de los coches sueña con
+                                    escuchar 🔥</small></p>
+                        </div>
+                    </div>
+                    <!-- finfila imagen con descripción-->
+                    <!--fin de contenido de botones-->
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--fin Menú-nav-->
-    <!--boton de seleccion nav-->
-    <div class="container-fluid">
-        <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active btn" id="pills-home-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                    aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
-                        class="fa-solid fa-square"></i></button>
-            </li>
-        </ul>
-        <!--fin boton de seleccion nav-->
-        <!--contenido de botones-->
-        <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
-            <!--3 columnas de imagenes-->
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="container-fluid">
-                    <div class="row mt-2 g-1 d-flex justify-content-center">
-                        <div class="col-4">
-                            <img src="mushrooms_640.jpg" class="rounded img-pequena" alt="Mundo de colores">
-                        </div>
-                        <div class="col-4">
-                            <img src="mushrooms_640.jpg" class="rounded img-pequena" alt="Mundo de colores">
-                        </div>
-                        <div class="col-4">
-                            <img src="mushrooms_640.jpg" class="rounded img-pequena" alt="Mundo de colores">
-                        </div>
-                    </div>
-                    <div class="row mt-2 g-1 d-flex justify-content-center">
-                        <div class="col-4">
-                            <img src="mushrooms_640.jpg" class="rounded img-pequena" alt="Mundo de colores">
-                        </div>
-                        <div class="col-4">
-                            <img src="mushrooms_640.jpg" class="rounded img-pequena" alt="Mundo de colores">
-                        </div>
-                        <div class="col-4">
-                            <img src="mushrooms_640.jpg" class="rounded img-pequena" alt="Mundo de colores">
-                        </div>
-                    </div>
-                    <div class="row mt-2 g-1 mb-2 d-flex justify-content-center">
-                        <div class="col-4">
-                            <img src="mushrooms_640.jpg" class="rounded img-pequena" alt="Mundo de colores">
-                        </div>
-                        <div class="col-4">
-                            <img src="mushrooms_640.jpg" class="rounded img-pequena" alt="Mundo de colores">
-                        </div>
-                        <div class="col-4">
-                            <img src="mushrooms_640.jpg" class="rounded img-pequena" alt="Mundo de colores">
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <!-- fin3 columnas de imagenes-->
-            <!--fila imagen con descripción-->
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="card m-2" style="width: 35rem;">
-                    <div class="d-flex justify-content-between mt-1 ms-2 me-2">
-                        <h5>Outum</h5>
-                        <p>4/5</p>
-                    </div>
-                    <img src="mushrooms_640.jpg" class="card-img-top" alt="bosque de setas">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h6><i class="fa-regular fa-heart"></i><i class="fa-regular fa-comment"></i><i
-                                    class="fa-regular fa-paper-plane"></i></h6>
-                            <h6><i class="fa-solid fa-tag"></i></h6>
-                        </div>
-                        <p class="card-text"><b>7637 likes</b></p>
-                        <p class="card-text"><small>El otoño ya esta aquí</small></p>
-                    </div>
-                </div>
-                <div class="card m-2" style="width: 35rem;">
-                    <div class="d-flex justify-content-between mt-1 ms-2 me-2">
-                        <h5>Outum</h5>
-                        <p>4/5</p>
-                    </div>
-                    <img src="mushrooms_640.jpg" class="card-img-top" alt="bosque de setas">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h6><i class="fa-regular fa-heart"></i><i class="fa-regular fa-comment"></i><i
-                                    class="fa-regular fa-paper-plane"></i></h6>
-                            <h6><i class="fa-solid fa-tag"></i></h6>
-                        </div>
-                        <p class="card-text"><b>7637 likes</b></p>
-                        <p class="card-text"><small>El otoño ya esta aquí</small></p>
-                    </div>
-                </div>
-                <div class="card m-2" style="width: 35rem;">
-                    <div class="d-flex justify-content-between mt-1 ms-2 me-2">
-                        <h5>Outum</h5>
-                        <p>4/5</p>
-                    </div>
-                    <img src=" mushrooms_640.jpg" class="card-img-top" alt="bosque de setas">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h6><i class="fa-regular fa-heart"></i><i class="fa-regular fa-comment"></i><i
-                                    class="fa-regular fa-paper-plane"></i></h6>
-                            <h6><i class="fa-solid fa-tag"></i></h6>
-                        </div>
-                        <p class="card-text"><b>7637 likes</b></p>
-                        <p class="card-text"><small>El otoño ya esta aquí</small></p>
-                    </div>
-                </div>
-                <!-- finfila imagen con descripción-->
-                <!--fin de contenido de botones-->
-
             </div>
         </div>
-    </div>
     </div>
 
 

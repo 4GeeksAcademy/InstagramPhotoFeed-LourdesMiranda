@@ -7,4 +7,13 @@ body{
 }
 .img-pequena{
     width: 400px;
+    height: 240px;
+     object-fit: cover;
+    border-radius: 10px;
+}
+
+img:hover{
+    transform: scale(1.1); /* agranda un poco */
+    transition: transform 0.3s;
+    border: 2px black;
 }
